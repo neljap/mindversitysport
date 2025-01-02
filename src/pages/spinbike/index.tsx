@@ -112,7 +112,7 @@ const Spinbike = () => {
                 <div className="md:w-2/3 w-full flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="text-2xl md:text-6xl font-['Inter'] font-[800] uppercase">Why wait for <span className="text-primary">  tomorrow? </span></h3>
                     <p className="text-center md:text-lg leading-4" >Pedal your way to greater strength, boosted energy, and newfound confidence. Start today and experience the empowering benefits of spinning for both your body and mind.</p>
-                    <button onClick={scrolToForm} className="py-3 px-6 rounded-full border-2 border-white text-white bg-red-900 hover:bg-primary">ORDER NOW</button>
+                    <button onClick={scrolToForm} className="py-1 md:py-3 md:px-6 px-3 text-sm md:text-md rounded-full border-2 border-white text-white bg-red-900 hover:bg-primary">ORDER NOW</button>
                 </div>
               </div>
                 
@@ -123,7 +123,7 @@ const Spinbike = () => {
                 <div className="md:w-2/3 w-full flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="text-2xl md:text-6xl font-['Inter'] font-[800] uppercase">Make your health a <span className="text-primary"> priority </span> </h3>
                     <p className="text-center md:text-lg leading-4">Pedal towards a stronger, more energized version of yourself. Embrace the power of spinning to boost both your physical strength and happiness, transforming into the best version of you.</p>
-                    <button onClick={scrolToForm} className="py-3 px-6 rounded-full text-white bg-red-900 hover:bg-primary border-2 border-white">Order Now</button>
+                    <button onClick={scrolToForm} className="py-1 md:py-3 md:px-6 px-3 text-sm md:text-md rounded-full text-white bg-red-900 hover:bg-primary border-2 border-white">Order Now</button>
                 </div>
               </div>
                 

@@ -24,7 +24,7 @@ function App() {
     Component: Root
   }])
 
-  const WhatsLinkUs = "https://wa.link/5u2vxx";
+  const WhatsLinkUs = "https://wa.link/b9s8p8";
 
   function Root() {
       return(
