@@ -100,7 +100,7 @@ const Spinbike = () => {
                   <h3 className="text-2xl md:text-6xl font-['Inter'] font-[800]">INVEST IN <span className="text-primary"> YOURSELF</span></h3>
 
                     <p className="text-center md:text-lg text:sm leading-4">Just a few minutes on the spin bike today can pave the way for a healthier, happier life, proving that small efforts now yield lasting benefits for your well-being.</p>
-                    <button onClick={scrolToForm} className="md:py-3 py-1 md:px-6 px-3 rounded-full border-2 border-white text-white bg-red-900 hover:bg-primary">ORDER NOW</button>
+                    <button onClick={scrolToForm} className="md:py-3 py-1 md:px-6 px-3 text-sm md:text-md rounded-full border-2 border-white text-white bg-red-900 hover:bg-primary">ORDER NOW</button>
 
                     
                 </div>
@@ -123,7 +123,7 @@ const Spinbike = () => {
                 <div className="md:w-2/3 w-full flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="text-2xl md:text-6xl font-['Inter'] font-[800] uppercase">Make your health a <span className="text-primary"> priority </span> </h3>
                     <p className="text-center md:text-lg leading-4">Pedal towards a stronger, more energized version of yourself. Embrace the power of spinning to boost both your physical strength and happiness, transforming into the best version of you.</p>
-                    <button onClick={scrolToForm} className="py-1 md:py-3 md:px-6 px-3 text-sm md:text-md rounded-full text-white bg-red-900 hover:bg-primary border-2 border-white">Order Now</button>
+                    <button onClick={scrolToForm} className="py-1 md:py-3 md:px-6 px-3 text-sm md:text-md rounded-full text-white bg-red-900 hover:bg-primary border-2 border-white">ORDER NOW</button>
                 </div>
               </div>
                 
@@ -231,53 +231,55 @@ const Spinbike = () => {
           {/* Contact Us */}
         <div className="container py-6" ref={formRef}>
           <div className="w-full md:w-1/2 mx-auto">
-            <h2 className="text-center font-[700] font-['Inter'] py-4 text-4xl">Contact <span className="text-primary">Us</span> </h2>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-2 shadow rounded-xl p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-start items-center pt-2">
-               <div className="flex flex-col gap-1">
+            <h2 className="text-center font-[700] font-['Inter'] py-4 md:text-4xl text-2xl">Contact <span className="text-primary">Us</span> </h2>
+            <form onSubmit={handleSubmit} className="flex flex-col md:gap-2 gap-0 shadow rounded-xl md:p-8 p-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 justify-start items-center md:pt-2 pt-0">
+               <div className="flex flex-col md:gap-1 gap-0">
                 <label className="font-[500]">First Name</label>
                 <input type="text" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={firstName} onChange={(e:any) => setFirstName(e.target.value)} />
               </div> 
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col md:gap-1 gap-0">
                 <label className="font-[500]">Last Name</label>
                 <input type="text" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={lastName} onChange={(e: any) => setLastName(e.target.value)} />
               </div>
               </div>
-              <div className="flex flex-col gap-1 pt-2">
+              <div className="flex flex-col md:gap-1 gap-0 md:pt-2 pt-0">
                 <label className="font-[500]">Email</label>
                 <input type="email" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={email} onChange={(e:any) => setEmail(e.target.value)} />
               </div>
               <div>
-              <div className="flex flex-col gap-1 pt-2">
+              <div className="flex flex-col md:gap-1 gap-0 md:pt-2 pt-0">
                     <label className="font-[500]">Address</label>
                     <input type="text" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={address} onChange={(e:any) => setAddress(e.target.value)} />
                   </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-start items-center pt-2">
-                  <div className="flex flex-col gap-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-start items-center md:pt-2 pt-0">
+                  <div className="flex flex-col md:gap-1 gap-0">
                     <label className="font-[500]">City</label>
                     <input type="text" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={city} onChange={(e:any) => setCity(e.target.value)} />
                   </div>
-                  <div className="flex flex-col gap-1">
+                  <div className="flex flex-col md:gap-1 gap-0">
                     <label className="font-[500]">State</label>
                     <input type="text" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={state} onChange={(e:any) => setState(e.target.value)}/>
                   </div>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-start items-center">
-               <div className="flex flex-col gap-1">
+               <div className="flex flex-col md:gap-1 gap-0">
                 <label className="font-[500]">Phone Number</label>
                 <input type="number" className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={phoneNo} onChange={(e: any) => setPhoneNo(e.target.value)}/>
               </div> 
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col md:gap-1 gap-0">
                 <label className="font-[500]">Alternative Phone Number</label>
                 <input type="number"  className="rounded border-inpcolor border-opacity-90 border-2 p-1" value={altPhoneNo} onChange={(e: any) => setAltPhoneNo(e.target.value)}/>
               </div>
               </div>
-              <div className="flex flex-col gap-1 justify-start items-start">
+              <div className="flex flex-col md:gap-1 gap-0 justify-start items-start">
                 <label className="font-[700] font-['Inter']">Message</label>
-                <textarea className="w-full h-80 rounded border-inpcolor border-opacity-90 border-2 p-1" value={message} onChange={(e: any) => setMessage(e.target.value)} ></textarea>
+                <textarea className="w-full md:h-80 h-48 rounded border-inpcolor border-opacity-90 border-2 p-1" value={message} onChange={(e: any) => setMessage(e.target.value)} ></textarea>
               </div>
-              <button className="bg-red-900 hover:bg-primary py-2 px-4  text-white w-fit rounded">{formLoading ? 'Submitting': 'Submit'}</button>
+              <div className="pt-2 md:pt-4">
+              <button className="bg-red-900 hover:bg-primary py-2 px-4 float-end  text-white w-fit rounded">{formLoading ? 'Submitting': 'Submit'}</button>
+              </div>
             </form>
           </div>
         </div>
