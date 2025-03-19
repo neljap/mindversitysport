@@ -232,7 +232,7 @@ const Spinbike = () => {
         <div className="container py-6" ref={formRef}>
           <div className="w-full md:w-1/2 mx-auto">
             <h2 className="text-center font-[700] font-['Inter'] py-4 md:text-4xl text-2xl">Contact <span className="text-primary">Us</span> </h2>
-            <form onSubmit={handleSubmit} className="flex flex-col md:gap-2 gap-0 shadow rounded-xl md:p-8 p-4">
+            <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="flex flex-col md:gap-2 gap-0 shadow rounded-xl md:p-8 p-4">
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 justify-start items-center md:pt-2 pt-0">
                <div className="flex flex-col md:gap-1 gap-0">
                 <label className="font-[500]">First Name</label>
